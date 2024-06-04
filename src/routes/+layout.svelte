@@ -48,13 +48,13 @@
               <a href="/">Pocetna</a>
             </li>
             <li class="px-2 hover:text-secondary">
-              <a href="/about">O nama</a>
+              <a href="/">O nama</a>
             </li>
             <li class="px-2 hover:text-secondary">
-              <a href="/gallery">Galerija</a>
+              <a href="/">Galerija</a>
             </li>
             <li class="px-2 hover:text-secondary">
-              <a href="/contact">Kontakt</a>
+              <a href="/">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -112,7 +112,7 @@
             </ul>
           <li class="text-xl p-4 border-b w-full">
             <a on:click={() => isMenuOpen = false}
-              href="/about"
+              href="/"
               class="nav-link"
             >
               ABOUT
@@ -120,7 +120,7 @@
           </li>
           <li class="text-xl p-4 border-b w-full">
             <a on:click={() => isMenuOpen = false}
-              href="/gallery"
+              href="/"
               class="nav-link"
             >
               GALLERY
@@ -128,7 +128,7 @@
           </li>
           <li class="text-xl p-4 border-b w-full">
             <a on:click={() => isMenuOpen = false}
-              href="/contact"
+              href="/"
               class="nav-link"
             >
               CONTACT
