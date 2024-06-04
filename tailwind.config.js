@@ -8,8 +8,8 @@ export default {
             background: "#FDFDFD",
             textcol: "#434343",
             primary: "#2BB905",
-            secondary: "#9381FF",
-            accent: "#FF36AB"
+            secondary: "#00236A",
+            accent: "#1DFE1A"
         }
     }
   },
