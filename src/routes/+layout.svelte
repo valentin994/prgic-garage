@@ -38,25 +38,28 @@
 
 <div class="{currentTheme} app bg-background dark:bg-gray-800 dark:text-background min-h-screen flex flex-col transition-colors duration-1000">
     <nav class="px-4 py-2 border-b border-gray-200">
-      <div class="flex flex-wrap items-center justify-between mx-auto w-full ">
-        <a href="/" class="flex items-center px-4 text-2xl">
+      <div class="flex items-center justify-between w-full">
+        <a href="/" class="px-4 min-w-24 text-2xl">
             Prgic Tor
         </a>
-        <div class="p-4 hidden md:max-[4200px]:block text-lg">
+        <div class="text-primary p-4 hidden md:max-[4200px]:block text-lg">
           <ul class="flex">
             <li class="px-2 hover:text-secondary">
-              <a href="/">Pocetna</a>
+              <a href="/">PRODUCTS</a>
             </li>
             <li class="px-2 hover:text-secondary">
-              <a href="/">O nama</a>
+              <a href="/">ABOUT</a>
             </li>
             <li class="px-2 hover:text-secondary">
-              <a href="/">Galerija</a>
+              <a href="/">GALLERY</a>
             </li>
             <li class="px-2 hover:text-secondary">
-              <a href="/">Kontakt</a>
+              <a href="/">CONTACT</a>
             </li>
           </ul>
+        </div>
+        <div class="min-w-24 hidden md:max-[4200px]:block">
+            <p class="text-lg text-gray-500"><span class="text-primary">EN</span> | <span class="text-gray-300">DE</span></p>
         </div>
         <button
           name="Contact call to action"
@@ -84,21 +87,21 @@
       </div>
 
     <nav
-        class={`fixed flex top-0 left-0 w-full z-10 mt-24 h-screen bg-background text-primary dark:bg-gray-800 dark:text-gray-200 bg-opacity-100 transform delay-100 transition-all duration-500 overscroll-auto ${
+        class={`fixed flex top-0 left-0 w-full z-10 mt-20 h-screen bg-background text-primary dark:bg-gray-800 dark:text-gray-200 bg-opacity-100 transform delay-100 transition-all duration-500 overscroll-auto ${
           isMenuOpen
             ? "opacity-100 translate-x-0"
             : "opacity-0 -translate-x-full"
         }`}
       >
-        <ul class="flex flex-col items-start w-full justify-start">
-          <li class="flex justify-between text-xl p-4 border-b w-full">
-            <a on:click={() => isMenuOpen = false}
+        <ul class="flex flex-col px-4 items-start w-full justify-start">
+          <li on:click={() => isProductDropdownOpen = !isProductDropdownOpen} class="flex justify-between text-xl p-4 border-b w-full">
+            <a 
               href="/"
             >
               PRODUCTS
             </a>
 
-          <svg fill="currentColor" on:click={()=>isProductDropdownOpen=!isProductDropdownOpen} viewBox="0 0 20 20" 
+          <svg fill="currentColor" viewBox="0 0 20 20" 
             class={`inline w-6 h-6 mt-1 ml-1 transition-transform duration-200 transform cursor-pointer 
               ${isProductDropdownOpen
                 ? "rotate-180"
@@ -134,17 +137,15 @@
               CONTACT
             </a>
           </li>
+            <div class="w-full text-center text-2xl p-12">
+                <p class="text-gray-500"><span class="p-2 px-4 m-2 text-primary">DE</span><span class="p-2 px-4 m-2 text-gray-300">EN</span></p>
+            </div>
+
+            <button on:click={toggleTheme} class="p-4 m-4 max-w-20 bg-primary text-gray-100">Toggle Theme</button>
         </ul>
       </nav>
       </nav>
-    <nav class="text-textcol px-4 py-8">
-
-    </nav>
-    <button on:click={toggleTheme} class="p-4 m-4 bg-primary text-gray-100 dark:bg-secondary dark:text-background">Toggle Theme</button>
-
-
 	<main>
 		<slot />
 	</main>
-
 </div>
