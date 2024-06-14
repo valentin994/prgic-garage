@@ -87,7 +87,7 @@
       </div>
 
     <nav
-        class={`fixed flex top-0 left-0 w-full z-10 mt-20 h-screen bg-background text-primary dark:bg-gray-800 dark:text-gray-200 bg-opacity-100 transform delay-100 transition-all duration-500 overscroll-auto ${
+        class={`fixed flex top-0 left-0 w-full z-10 mt-16 h-screen bg-background text-primary dark:bg-gray-800 dark:text-gray-200 bg-opacity-100 transform delay-100 transition-all duration-500 overscroll-auto ${
           isMenuOpen
             ? "opacity-100 translate-x-0"
             : "opacity-0 -translate-x-full"
@@ -141,7 +141,7 @@
                 <p class="text-gray-500"><span class="p-2 px-4 m-2 text-primary">DE</span><span class="p-2 px-4 m-2 text-gray-300">EN</span></p>
             </div>
 
-            <button on:click={toggleTheme} class="p-4 m-4 max-w-20 bg-primary text-gray-100">Toggle Theme</button>
+            <button on:click={()=> {console.log("disabled")}} class="p-4 m-4 max-w-20 bg-gray-100 text-gray-400">Toggle Theme</button>
         </ul>
       </nav>
       </nav>

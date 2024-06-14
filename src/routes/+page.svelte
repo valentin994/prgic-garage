@@ -20,21 +20,23 @@
         </div>
     </div>
     <div class="flex flex-col md:flex-row w-full justify-evenly bg-gray-100">
-        <div class="w-full md:w-1/3">
+        <div class="w-full md:w-1/3 md:max-w-96">
             <div class="flex flex-col justify-end w-full h-full md:mt-28">
-                <h2 class="text-md pt-2 text-gray-500 font-semibold">Automate your life</h2>
-                <h1 class="text-2xl pb-2 md:pb-2 text-primary md:text-2xl">Lorem Ipsum</h1>
-                <p class="font-light text-lg text-gray-700 md:text-xl"> Nunc mattis enim ut tellus elementum sagittis. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Non enim praesent elementum facilisis leo vel fringilla est. In tellus integer feugiat scelerisque. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque aliquam vestibulum morbi blandit cursus risus. </p>
-                <div class="bg-textcol h-96 w-96 my-12"></div>
+                <h2 class="text-md px-4 md:px-0 pt-2 text-gray-500 font-semibold">Automate your life</h2>
+                <h1 class="text-2xl px-4 md:px-0 pb-2 md:pb-2 text-primary md:text-2xl">Lorem Ipsum</h1>
+                <p class="font-light px-4 md:px-0 text-lg text-gray-700 md:text-xl"> Nunc mattis enim ut tellus elementum sagittis. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Non enim praesent elementum facilisis leo vel fringilla est. In tellus integer feugiat scelerisque. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque aliquam vestibulum morbi blandit cursus risus. </p>
+                <div class="bg-textcol w-full md:w-96 h-96 my-12"></div>
             </div>
         </div>
-        <div class="w-full md:w-1/3">
+        <div class="w-full md:w-1/3 md:max-w-96">
             <div class="flex flex-col w-full md:px-6 md:pt-12">
-                <div class="h-96 w-96 bg-secondary">
+                <div class="h-96 w-full md:w-96 bg-secondary hidden md:block">
                     <p class="text-white w-full h-full p-36 text-center align-text-bottom">Some text in the div</p>
                 </div>
-                <p class="font-light text-lg text-gray-700 md:text-xl md:pt-8">Nunc mattis enim ut tellus elementum sagittis. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Non enim praesent elementum facilisis leo vel fringilla est. In tellus integer feugiat scelerisque. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit.</p>
-                <button class="text-lg text-background bg-primary max-w-32 rounded py-2 px-4 mt-10 md:text-xl">Shop now</button>
+                <p class="px-4 md:px-0 font-light text-lg text-gray-700 md:text-xl md:pt-8">Nunc mattis enim ut tellus elementum sagittis. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Non enim praesent elementum facilisis leo vel fringilla est. In tellus integer feugiat scelerisque. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit.</p>
+                <div class="w-full text-center pb-4 md:text-start">
+                    <button class="text-lg text-background bg-primary max-w-32 rounded py-2 px-4 mt-10 md:text-xl">Shop now</button>
+                </div>
             </div>
         </div>
     </div>
