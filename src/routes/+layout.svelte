@@ -37,23 +37,23 @@
 </script>
 
 <div class="{currentTheme} app bg-background dark:bg-gray-800 dark:text-background min-h-screen flex flex-col transition-colors duration-1000">
-    <nav class="px-4 py-2 border-b border-gray-200">
-      <div class="flex items-center justify-between w-full">
+    <nav class="px-4 border-b border-gray-200 bg-background md:sticky md:top-0 md:z-50">
+      <div class="flex border-red-400 items-center justify-between w-full">
         <a href="/" class="px-4 min-w-24 text-2xl">
             Prgic Tor
         </a>
-        <div class="text-primary p-4 hidden md:max-[4200px]:block text-lg">
-          <ul class="flex">
-            <li class="px-2 hover:text-secondary">
+        <div class="text-primary hidden md:max-[4200px]:block text-lg">
+          <ul class="flex h-full">
+            <li class="px-2 py-6 border-b-2 border-transparent hover:border-primary transition-all duration-300 ease-in">
               <a href="/">PRODUCTS</a>
             </li>
-            <li class="px-2 hover:text-secondary">
+            <li class="px-2 py-6 border-b-2 border-transparent hover:border-primary transition-all duration-300 ease-in">
               <a href="/">ABOUT</a>
             </li>
-            <li class="px-2 hover:text-secondary">
+            <li class="px-2 py-6 border-b-2 border-transparent hover:border-primary transition-all duration-300 ease-in">
               <a href="/">GALLERY</a>
             </li>
-            <li class="px-2 hover:text-secondary">
+            <li class="px-2 py-6 border-b-2 border-transparent hover:border-primary transition-all duration-300 ease-in">
               <a href="/">CONTACT</a>
             </li>
           </ul>
