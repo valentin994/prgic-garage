@@ -22,7 +22,7 @@
     <div class="flex flex-col md:flex-row w-full justify-evenly bg-gray-100">
         <div class="w-full md:w-1/3 md:max-w-96">
             <div class="flex flex-col justify-end w-full h-full md:mt-28">
-                <h2 class="text-md px-4 md:px-0 pt-2 text-gray-500 font-semibold">Automate your life</h2>
+                <h2 class="text-md px-4 md:px-0 pt-4 text-gray-500 font-semibold">Automate your life</h2>
                 <h1 class="text-2xl px-4 md:px-0 pb-2 md:pb-2 text-primary md:text-2xl">Lorem Ipsum</h1>
                 <p class="font-light px-4 md:px-0 text-lg text-gray-700 md:text-xl"> Nunc mattis enim ut tellus elementum sagittis. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Non enim praesent elementum facilisis leo vel fringilla est. In tellus integer feugiat scelerisque. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque aliquam vestibulum morbi blandit cursus risus. </p>
                 <div class="bg-textcol w-full md:w-96 h-96 my-12"></div>

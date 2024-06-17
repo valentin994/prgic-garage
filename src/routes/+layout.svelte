@@ -36,7 +36,7 @@
 	$: href = $page.url.pathname;
 </script>
 
-<div class="{currentTheme} app bg-background dark:bg-gray-800 dark:text-background min-h-screen flex flex-col transition-colors duration-1000">
+<div class="{currentTheme} app bg-background min-h-screen flex flex-col transition-colors duration-1000">
     <nav class="px-4 border-b border-gray-200 bg-background md:sticky md:top-0 md:z-50">
       <div class="flex border-red-400 items-center justify-between w-full">
         <a href="/" class="px-4 min-w-24 text-2xl">
@@ -68,17 +68,17 @@
         >
           <div class="absolute w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
             <span
-              class={`absolute h-0.5 w-5 bg-textcol dark:bg-background transform transition duration-300 ease-in-out ${
+              class={`absolute h-0.5 w-5 bg-textcol transform transition duration-300 ease-in-out ${
                 isMenuOpen ? "rotate-45 bg-textcol delay-200" : "-translate-y-1.5"
               }`}
             ></span>
             <span
-              class={`absolute h-0.5 bg-textcol dark:bg-background transform transition-all duration-200 ease-in-out ${
+              class={`absolute h-0.5 bg-textcol  transform transition-all duration-200 ease-in-out ${
                 isMenuOpen ? "w-0 opacity-50" : "w-5 delay-200 opacity-100"
               }`}
             ></span>
             <span
-              class={`absolute h-0.5 w-5 bg-textcol dark:bg-background transform transition duration-300 ease-in-out ${
+              class={`absolute h-0.5 w-5 bg-textcol transform transition duration-300 ease-in-out ${
                 isMenuOpen ? "-rotate-45 delay-200" : "translate-y-1.5"
               }`}
             ></span>
@@ -87,7 +87,7 @@
       </div>
 
     <nav
-        class={`fixed flex top-0 left-0 w-full z-10 mt-16 h-screen bg-background text-primary dark:bg-gray-800 dark:text-gray-200 bg-opacity-100 transform delay-100 transition-all duration-500 overscroll-auto ${
+        class={`fixed flex top-0 left-0 w-full z-10 mt-16 h-screen bg-background text-primary bg-opacity-100 transform delay-100 transition-all duration-500 overscroll-auto ${
           isMenuOpen
             ? "opacity-100 translate-x-0"
             : "opacity-0 -translate-x-full"
@@ -108,7 +108,7 @@
                 : "rotate-0"
               }`}><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
           </li>
-            <ul class={`flex flex-col items-start w-full justify-start transform transition-all duration-300 overflow-hidden text-gray-600 dark:text-gray-300 ${isProductDropdownOpen ? "max-h-52" : "max-h-0"}`}>
+            <ul class={`flex flex-col items-start w-full justify-start transform transition-all duration-300 overflow-hidden text-gray-600 ${isProductDropdownOpen ? "max-h-52" : "max-h-0"}`}>
               <li class="text-l p-4 border-b w-full">Garage</li>
               <li class="text-l p-4 border-b w-full">Automatic Doors</li>
               <li class="text-l p-4 border-b w-full">Gate Automation</li>
@@ -148,4 +148,35 @@
 	<main>
 		<slot />
 	</main>
+    <footer class="p-2 mt-4 border-t text-textcol text-md md:px-20 lg:px-52 md:text-sm bg-gray-50 bg-opacity-25">
+        <div class="flex flex-row justify-between my-4 md:my-12">
+            <div class="flex flex-col p-2 text-start md:flex-row">
+                <div class="p-2 content-center md:py-px">
+                    <a class="hover:text-gray-500" href="/">PRODUCTS</a>
+                </div>
+                <div class="p-2 content-center  md:py-px">
+                    <a class="hover:text-gray-500" href="/">ABOUT</a>
+                </div>
+                <div class="p-2 content-center  md:py-px">
+                    <a class="hover:text-gray-500" href="/">GALLERY</a>
+                </div>
+                <div class="p-2 content-center  md:py-px">
+                    <a class="hover:text-gray-500" href="/contact">CONTACT</a>
+                </div>
+
+
+            </div>
+            <div class="p-2 text-end">
+                <p class="p-2 md:p-0 md:py-px">Prgic Tor- und Türtechnik Inh</p>
+                <p class="p-2 md:p-0 md:py-px">Ante Prgić</p>
+                <p class="p-2 md:p-0 md:py-px">+43(0)216266089</p>
+                <p class="p-2 md:p-0 md:py-px">AT1400004210717337</p>
+            </div> 
+        </div>
+        <hr class="my-2 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-textcol to-transparent opacity-25" />
+        <div class="p-2 text-center">
+            <p class="text-xs">© Prgic Tor- und Türtechnik Inh</p> 
+            <p class="text-xs">created by <a href="https://github.com/valentin994" target="_blank">Valentin Vareskic</a></p>
+        </div>
+    </footer>
 </div>
