@@ -161,7 +161,7 @@
                     <a class="hover:text-gray-500" href="/">GALLERY</a>
                 </div>
                 <div class="p-2 content-center  md:py-px">
-                    <a class="hover:text-gray-500" href="/contact">CONTACT</a>
+                    <a class="hover:text-gray-500" href="/">CONTACT</a>
                 </div>
 
 
