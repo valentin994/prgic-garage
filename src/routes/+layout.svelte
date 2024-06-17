@@ -37,7 +37,7 @@
 </script>
 
 <div class="{currentTheme} app bg-background min-h-screen flex flex-col transition-colors duration-1000">
-    <nav class="px-4 border-b border-gray-200 bg-background md:sticky md:top-0 md:z-50">
+    <nav class="px-4 border-b border-gray-200 bg-background sticky top-0 z-50">
       <div class="flex border-red-400 items-center justify-between w-full">
         <a href="/" class="px-4 min-w-24 text-2xl">
             Prgic Tor

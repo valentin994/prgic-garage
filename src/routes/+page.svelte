@@ -34,7 +34,7 @@
                     <p class="text-white w-full h-full p-36 text-center align-text-bottom">Some text in the div</p>
                 </div>
                 <p class="px-4 md:px-0 font-light text-lg text-gray-700 md:text-xl md:pt-8">Nunc mattis enim ut tellus elementum sagittis. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Non enim praesent elementum facilisis leo vel fringilla est. In tellus integer feugiat scelerisque. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit.</p>
-                <div class="w-full text-center pb-4 md:text-start">
+                <div class="w-full text-center pb-8 md:text-start">
                     <button class="text-lg text-background bg-primary max-w-32 rounded py-2 px-4 mt-10 md:text-xl">Shop now</button>
                 </div>
             </div>
