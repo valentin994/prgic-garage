@@ -148,7 +148,7 @@
 	<main>
 		<slot />
 	</main>
-    <footer class="p-2 mt-4 border-t text-textcol text-md md:px-20 lg:px-52 md:text-sm bg-gray-50 bg-opacity-25">
+    <footer class="p-2 mt-4 text-textcol text-md md:px-20 lg:px-52 md:text-sm bg-gray-200 bg-opacity-25">
         <div class="flex flex-row justify-between my-4 md:my-12">
             <div class="flex flex-col p-2 text-start md:flex-row">
                 <div class="p-2 content-center md:py-px">

@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="w-full md:w-1/3 md:max-w-96">
-            <div class="flex flex-col w-full md:px-6 md:pt-12">
+            <div class="flex flex-col w-full md:px-4 md:pt-12">
                 <div class="h-96 w-full md:w-96 bg-secondary hidden md:block">
                     <p class="text-white w-full h-full p-36 text-center align-text-bottom">Some text in the div</p>
                 </div>
