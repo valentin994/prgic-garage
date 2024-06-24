@@ -39,13 +39,13 @@
 <div class="{currentTheme} app bg-background min-h-screen flex flex-col transition-colors duration-1000">
     <nav class="px-4 border-b border-gray-200 bg-background sticky top-0 z-50">
       <div class="flex border-red-400 items-center justify-between w-full">
-        <a href="/" class="px-4 min-w-24 text-2xl">
+        <a href="/" class="px-4 min-w-24 text-2xl" on:click={() => isMenuOpen=false}>
             Prgic Tor
         </a>
         <div class="text-primary hidden md:max-[4200px]:block text-lg">
           <ul class="flex h-full">
             <li class="px-2 py-6 border-b-2 border-transparent hover:border-primary transition-all duration-300 ease-in">
-              <a href="/">PRODUCTS</a>
+              <a href="/products">PRODUCTS</a>
             </li>
             <li class="px-2 py-6 border-b-2 border-transparent hover:border-primary transition-all duration-300 ease-in">
               <a href="/">ABOUT</a>
@@ -94,14 +94,15 @@
         }`}
       >
         <ul class="flex flex-col px-4 items-start w-full justify-start">
-          <li on:click={() => isProductDropdownOpen = !isProductDropdownOpen} class="flex justify-between text-xl p-4 border-b w-full">
-            <a 
-              href="/"
+          <li  class="flex justify-between text-xl p-4 border-b w-full">
+            <a on:click={() => isMenuOpen = false}
+              href="/products"
             >
               PRODUCTS
             </a>
 
-          <svg fill="currentColor" viewBox="0 0 20 20" 
+          <svg fill="currentColor" viewBox="0 0 20 20"
+            on:click={() => isProductDropdownOpen = !isProductDropdownOpen}
             class={`inline w-6 h-6 mt-1 ml-1 transition-transform duration-200 transform cursor-pointer 
               ${isProductDropdownOpen
                 ? "rotate-180"
@@ -148,35 +149,28 @@
 	<main>
 		<slot />
 	</main>
-    <footer class="p-2 mt-4 text-textcol text-md md:px-20 lg:px-52 md:text-sm bg-gray-200 bg-opacity-25">
-        <div class="flex flex-row justify-between my-4 md:my-12">
-            <div class="flex flex-col p-2 text-start md:flex-row">
-                <div class="p-2 content-center md:py-px">
-                    <a class="hover:text-gray-500" href="/">PRODUCTS</a>
+    <footer class="text-textcol md:px-20 lg:px-52 md:text-sm">
+        <div class="flex justify-center">
+            <div class="flex flex-row justify-between">
+                <div class="flex p-2 text-start md:flex-row text-xs">
+                    <div class="px-2 content-center md:py-px">
+                        <a class="hover:text-gray-500" href="/products">PRODUCTS</a>
+                    </div>
+                    <div class="px-2 content-center">
+                        <a class="hover:text-gray-500" href="/">ABOUT</a>
+                    </div>
+                    <div class="px-2 content-center">
+                        <a class="hover:text-gray-500" href="/">GALLERY</a>
+                    </div>
+                    <div class="px-2 content-center">
+                        <a class="hover:text-gray-500" href="/">CONTACT</a>
+                    </div>
                 </div>
-                <div class="p-2 content-center  md:py-px">
-                    <a class="hover:text-gray-500" href="/">ABOUT</a>
-                </div>
-                <div class="p-2 content-center  md:py-px">
-                    <a class="hover:text-gray-500" href="/">GALLERY</a>
-                </div>
-                <div class="p-2 content-center  md:py-px">
-                    <a class="hover:text-gray-500" href="/">CONTACT</a>
-                </div>
-
-
             </div>
-            <div class="p-2 text-end">
-                <p class="p-2 md:p-0 md:py-px">Prgic Tor- und Türtechnik Inh</p>
-                <p class="p-2 md:p-0 md:py-px">Ante Prgić</p>
-                <p class="p-2 md:p-0 md:py-px">+43(0)216266089</p>
-                <p class="p-2 md:p-0 md:py-px">AT1400004210717337</p>
-            </div> 
         </div>
-        <hr class="my-2 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-textcol to-transparent opacity-25" />
-        <div class="p-2 text-center">
-            <p class="text-xs">© Prgic Tor- und Türtechnik Inh</p> 
-            <p class="text-xs">created by <a href="https://github.com/valentin994" target="_blank">Valentin Vareskic</a></p>
+        <hr class="my-2 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-gray-800 to-transparent opacity-25" />
+        <div class="text-center py-4">
+            <p class="text-xs">© Prgic Tor- und Türtechnik Inh created by <a href="https://github.com/valentin994" target="_blank">Valentin Vareskic</a></p> 
         </div>
     </footer>
 </div>

@@ -1,10 +1,13 @@
+<script>
+    import WarrantyIcon from "$lib/images/warranty-svgrepo-com.svg";
+</script>
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </svelte:head>
 <section>
-    <div class="flex justify-center w-full md:mt-12 md:pb-16 bg-gradient-to-b from-background from-10% to-primary to-0%">
+    <div class="flex justify-center w-full md:mt-12 md:pb-16 bg-gradient-to-b from-background from-10% to-gray-300 to-0%">
         <div class="flex flex-col justify-center w-full bg-gray-500 text-background min-h-72 p-4 px-6 align-middle md:w-2/3 md:overflow-visible md:z-20 md:min-h-96 md:rounded md:shadow">
             <h1 class="text-2xl md:text-3xl">We open Your world</h1>
             <p class="text-sm text-gray-300 md:text-lg">Garage, doors, gates automation, everything</p>
@@ -40,7 +43,15 @@
             </div>
         </div>
     </div>
-    <div class="h-96">
-
+    <div class="flex flex-col justify-center md:flex-row p-4 py-8 md:mt-24 md:bg-gray-50">
+        <div class="flex justify-center py-2">
+            <img class="w-20" alt="Warranty" src={WarrantyIcon} />
+        </div>
+        <div class="flex justify-center py-2">
+            <img class="w-20" alt="Warranty" src={WarrantyIcon} />
+        </div>
+        <div class="flex justify-center py-2">
+            <img class="w-20" alt="Warranty" src={WarrantyIcon} />
+        </div>
     </div>
 </section>
