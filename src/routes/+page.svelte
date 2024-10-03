@@ -14,7 +14,7 @@
             <button class="text-lg bg-primary max-w-32 rounded py-2 px-4 mt-10 md:text-2xl">Explore</button>
         </div>
     </div>
-    <div class="flex w-full justify-center">
+    <div class="flex w-full justify-center py-16">
         <div class="flex flex-col px-6 md:w-2/3">
             <h1 class="py-4 text-xl text-primary text-center w-full md:text-2xl">Meet us</h1>
             <p class="text-textcol text-center pb-10 md:text-xl">

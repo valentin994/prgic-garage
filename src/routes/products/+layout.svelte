@@ -11,7 +11,7 @@
             <option value="CA">Gates</option>
         </select>
     </div>
-
+    <slot />
     <div class="grid grid-cols-5 md:px-20">
         <div class="hidden md:block py-8 px-20 ">
             <ul class="text-textcol ">
